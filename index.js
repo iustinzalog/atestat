@@ -13,16 +13,23 @@ function handleResize() {
     checkbox.checked = false;
   }
 }
-const viewport = document.querySelector(".container");
-let isScrolling;
-viewport.addEventListener("scroll", () => {
-  window.clearTimeout(isScrolling);
-  isScrolling = setTimeout(() => {
-    // on scroll end, compute nearest slide and snap
-    const slideWidth = window.innerWidth;
-    const index = Math.round(viewport.scrollLeft / slideWidth);
-    viewport.scrollTo({ left: index * slideWidth, behavior: "smooth" });
-  }, 80); // 80ms after last scroll event
-});
+const slides = document.querySelectorAll(".gamma");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        history.replaceState(null, "", "#" + entry.target.id);
+      }
+    });
+  },
+  {
+    root: document.querySelector(".container"), // your horizontal scroll container
+    threshold: 0.6, // 60% visible → you can adjust
+    rootMargin: "0px",
+  }
+);
+
+slides.forEach((slide) => observer.observe(slide));
 
 window.addEventListener("resize", handleResize);
