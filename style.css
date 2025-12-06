@@ -8,7 +8,9 @@ body {
   width: 100%;
 }
 html {
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 * {
   margin: 0;
@@ -48,9 +50,6 @@ header a:hover {
 }
 .container {
   display: flex;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
   height: 86vh;
   padding-top: 14vh;
 }
