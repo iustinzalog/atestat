@@ -7,13 +7,6 @@
     <title>Atestat profesional la informatica - Orașele Europei</title>
   </head>
   <body>
-    <input type="radio" name="slides" id="pagina" checked="checked" />
-    <input type="radio" name="slides" id="roma" />
-    <input type="radio" name="slides" id="lyon" />
-    <input type="radio" name="slides" id="madrid" />
-    <input type="radio" name="slides" id="atena" />
-    <input type="radio" name="slides" id="timisoara" />
-    <input type="radio" name="slides" id="zagreb" />
     <input type="checkbox" id="sactive" class="cbgrup" />
     <label for="sactive" id="overlay"></label>
     <div class="nouhead">
@@ -32,17 +25,17 @@
       </label>
     </div>
     <header>
-      <label for="pagina">Pagina</label>
-      <label for="roma">Roma</label>
-      <label for="lyon">Lyon</label>
-      <label for="madrid">Madrid</label>
-      <label for="atena">Atena</label>
-      <label for="timisoara">Timisoara</label>
-      <label for="zagreb">Zagreb</label>
+      <a href="#pag2" onclick="toggleCheckbox()">Pagina</a>
+      <a href="#rom" onclick="toggleCheckbox()">Roma</a>
+      <a href="#lyo" onclick="toggleCheckbox()">Lyon</a>
+      <a href="#mad" onclick="toggleCheckbox()">Madrid</a>
+      <a href="#ate" onclick="toggleCheckbox()">Atena</a>
+      <a href="#tim" onclick="toggleCheckbox()">Timisoara</a>
+      <a href="#zag" onclick="toggleCheckbox()">Zagreb</a>
     </header>
 
     <div class="container">
-      <div class="gamma">
+      <div class="gamma" id="pag2">
         <div class="text">
           <div id="pag">
             <h2>
@@ -67,7 +60,7 @@
         </div>
       </div>
 
-      <div class="gamma">
+      <div class="gamma" id="rom">
         <div class="text">
           <div class="textprim">
             <div class="info">
@@ -137,7 +130,7 @@
         </div>
       </div>
 
-      <div class="gamma">
+      <div class="gamma" id="lyo">
         <div class="text">
           <div class="textprim">
             <div class="info">
@@ -227,7 +220,7 @@
         </div>
       </div>
 
-      <div class="gamma">
+      <div class="gamma" id="mad">
         <div class="text">
           <div class="textprim">
             <div class="info">
@@ -302,7 +295,7 @@
         </div>
       </div>
 
-      <div class="gamma">
+      <div class="gamma" id="ate">
         <div class="text">
           <div class="textprim">
             <div class="info">
@@ -398,7 +391,7 @@
         </div>
       </div>
 
-      <div class="gamma">
+      <div class="gamma" id="tim">
         <div class="text">
           <div class="textprim">
             <div class="info">
@@ -463,7 +456,7 @@
         </div>
       </div>
 
-      <div class="gamma">
+      <div class="gamma" id="zag">
         <div class="text">
           <div class="textprim">
             <div class="info">
