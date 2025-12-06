@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100svh;
+  height: 100vh;
   font-family: Georgia, "Times New Roman", Times, serif;
   overflow-x: hidden;
   width: 100%;
@@ -18,8 +18,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100svw;
-  height: 10svh;
+  width: 100vw;
+  height: 10vh;
   background-color: grey;
   box-shadow: 0px 0px 15px 0px;
   display: grid;
@@ -47,12 +47,17 @@ header a:hover {
   cursor: pointer;
 }
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding-top: 14svh;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  height: 86vh;
+  padding-top: 14vh;
 }
 .gamma {
-  width: 100svw;
+  width: 100vw;
+  flex-shrink: 0;
+  scroll-snap-align: start;
 }
 .text {
   display: flex;
@@ -165,7 +170,7 @@ svg {
     height: 300px;
     width: 300px;
     background-color: grey;
-    max-height: 10svh;
+    max-height: 10vh;
     width: 100%;
     min-height: 5em;
     box-shadow: 0 0 20px;
@@ -175,7 +180,7 @@ svg {
     top: 0;
     left: auto;
     right: -286px;
-    min-height: 100svh;
+    min-height: 100vh;
     width: auto;
     display: flex;
     flex-direction: column;
