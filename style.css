@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   height: 100vh;
   font-family: Georgia, "Times New Roman", Times, serif;
- 
+  overflow-x: hidden;
 }
 html {
   scroll-snap-type: x mandatory;
@@ -207,4 +207,3 @@ svg {
     align-items: center;
   }
 }
-
