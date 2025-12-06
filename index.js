@@ -1,19 +1,11 @@
-document
-  .querySelectorAll('input[type="radio"][name="slides"]')
-  .forEach((radio) => {
-    radio.addEventListener("change", function () {
-      if (this.checked) {
-        document
-          .querySelectorAll('input[type="checkbox"][class="cbgrup"]')
-          .forEach((checkbox) => {
-            checkbox.checked = false;
-          });
-      }
-    });
-  });
 function toggleCheckbox() {
   const checkbox = document.getElementById("sactive");
   checkbox.checked = !checkbox.checked;
+  document
+    .querySelectorAll('input[type="checkbox"][class="cbgrup"]')
+    .forEach((checkbox) => {
+      checkbox.checked = false;
+    });
 }
 function handleResize() {
   const checkbox = document.getElementById("sactive");
@@ -21,9 +13,5 @@ function handleResize() {
     checkbox.checked = false;
   }
 }
-document.addEventListener('DOMContentLoaded', function() {
-    // Disable horizontal scroll
-    document.body.style.overflowX = 'hidden';
 
 window.addEventListener("resize", handleResize);
-
