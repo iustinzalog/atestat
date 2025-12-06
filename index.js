@@ -21,5 +21,9 @@ function handleResize() {
     checkbox.checked = false;
   }
 }
+document.addEventListener('DOMContentLoaded', function() {
+    // Disable horizontal scroll
+    document.body.style.overflowX = 'hidden';
 
 window.addEventListener("resize", handleResize);
+
