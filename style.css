@@ -5,7 +5,6 @@ body {
   height: 100vh;
   font-family: Georgia, "Times New Roman", Times, serif;
   overflow-x: hidden;
-  width: 100%;
 }
 html {
   scroll-snap-type: x mandatory;
@@ -54,9 +53,10 @@ header a:hover {
   padding-top: 14vh;
 }
 .gamma {
-  width: 100vw;
+  flex: 0 0 100vw;
   flex-shrink: 0;
   scroll-snap-align: start;
+  box-sizing: border-box;
 }
 .text {
   display: flex;
