@@ -7,9 +7,10 @@ function toggleCheckbox() {
       checkbox.checked = false;
     });
 }
-document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+const container = document.getElementById("cont");
+container.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
   checkbox.addEventListener("change", function () {
-    const label = document.querySelector(`.container label[for="${this.id}"]`);
+    const label = document.querySelector(`label[for="${this.id}"]`);
     if (this.checked) {
       label.textContent = "Citeste mai putin!";
     } else {
@@ -24,4 +25,3 @@ function handleResize() {
   }
 }
 window.addEventListener("resize", handleResize);
-
