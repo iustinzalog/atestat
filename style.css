@@ -121,7 +121,7 @@ header a:hover {
   display: none;
 }
 svg {
-  fill: lightgray;
+  fill: black;
 }
 #roma20:checked ~ #romasecund {
   display: inline-block;
@@ -173,11 +173,10 @@ svg {
     position: fixed;
     height: 300px;
     width: 300px;
-    background-color: grey;
+    background-color: transparent;
     max-height: 10vh;
     width: 100%;
     min-height: 5em;
-    box-shadow: 0 0 20px;
   }
   header {
     position: fixed;
