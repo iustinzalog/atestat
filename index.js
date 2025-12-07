@@ -9,7 +9,7 @@ function toggleCheckbox() {
 }
 document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
   checkbox.addEventListener("change", function () {
-    const label = document.querySelector(`label[for="${this.id}"]`);
+    const label = document.querySelector(`.container label[for="${this.id}"]`);
     if (this.checked) {
       label.textContent = "Citeste mai putin!";
     } else {
@@ -24,3 +24,4 @@ function handleResize() {
   }
 }
 window.addEventListener("resize", handleResize);
+
