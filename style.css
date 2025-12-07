@@ -189,17 +189,16 @@ svg {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    transition: ease-out 0.4s 0s;
+    transition: ease-out 0.55s 0s;
     box-shadow: none;
+    background-color: lightgray;
+  }
+  header a {
+    color: black;
   }
   #sactive:checked ~ header {
     right: 0;
     box-shadow: 0 0 20px;
-  }
-  .header {
-    display: grid;
-    gap: 2em;
-    margin-top: 20px;
   }
   .open {
     display: inline-block;
@@ -214,4 +213,3 @@ svg {
     padding-top: 2vh;
   }
 }
-
