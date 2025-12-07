@@ -13,5 +13,5 @@ function handleResize() {
     checkbox.checked = false;
   }
 }
-window.addEventListener("resize", handleResize);
 
+window.addEventListener("resize", handleResize);
