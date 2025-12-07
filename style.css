@@ -189,7 +189,7 @@ svg {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    transition: ease-out 0.55s 0s;
+    transition: ease-out 0.4s 0s;
     box-shadow: none;
   }
   #sactive:checked ~ header {
@@ -210,4 +210,8 @@ svg {
     flex-direction: row-reverse;
     align-items: center;
   }
+  .container {
+    padding-top: 2vh;
+  }
 }
+
